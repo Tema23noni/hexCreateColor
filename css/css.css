@@ -38,7 +38,7 @@ h1{
     flex-direction: column;
 }
 .creater > div{
-    margin: 0;
+    pading: 0 20px
 
 }
 .btn > button{
