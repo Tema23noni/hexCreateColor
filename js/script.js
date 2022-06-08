@@ -65,3 +65,21 @@ const copy = document.querySelector('#copy').onclick = () =>{
     navigator.clipboard.writeText(text)
 }
 
+if(document.documentElement.clientWidth < 611){
+    let page = document.getElementById('main')
+    page.addEventListener('click', pager)
+}
+function pager(){
+    hex1 = renderHex();
+    hex2 = renderHex();
+    color1.value = `#${hex2}`
+    color2.value =`#${hex1}`
+    if(grLorR == 'line'){
+        document.getElementById('main').style.background = `linear-gradient(to left, #${hex1} , #${hex2})`
+        document.querySelector('.oops').style.background = `linear-gradient(to left, #${hex1} , #${hex2})`   
+    }else if(grLorR == 'rad'){
+        document.getElementById('main').style.background = `radial-gradient(#${hex1} , #${hex2})`
+    document.querySelector('.oops').style.background = `radial-gradient(#${hex1} , #${hex2})`   
+    }
+}
+

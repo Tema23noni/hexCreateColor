@@ -38,7 +38,7 @@ h1{
     flex-direction: column;
 }
 .creater > div{
-    margin: 5px 0 20px 20px ;
+    margin: 0;
 
 }
 .btn > button{
@@ -100,7 +100,7 @@ input{
 .copy > button:active{
     background-color: greenyellow;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 610px) {
     body{
         
         height: 100%;
@@ -111,7 +111,8 @@ input{
         background-color: white;
         border-right: 1px solid #000;
         flex: none;
-        max-width: 100%;
+        max-width: 610px;
+        height: 120px;
         overflow: none;
         box-shadow: 5px 0 5px -2px rgba(128, 128, 128, 0.3);
         display: flex;
@@ -126,11 +127,163 @@ input{
         
         
     }
+    
+    
+    #main{
+        background-color: white;
+    
+        box-shadow: 5px 0 5px -2px rgba(128, 128, 128, 0.3);
+    }
+    .creater{
+        display: flex;
+        flex-direction: row;
+    
+        max-width: 611px;
+        
+    }
+    .creater > div{
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    h1{
+        display: none;
+        border-bottom: none;
+        letter-spacing: 0px;
+        font-size: 16px;
+        position:absolute;
+        bottom: 0;
+        color: white;
+        left: 50vh;
+        text-align: center;
+        text-transform: uppercase;
+        height: 0px;
+        padding: 0px 0px 0 0px;
+    }
+    .add{
+        display: none;
+    }
+    
+    .copy{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+
+        padding: 0px;
+    }
+    .creater{
+        margin: 0;
+    }
+    .copy > p{
+        display: none;
+    }
+     p{
+        font-size: 20px;
+    }
+    .random{
+        display: none;
+    }
+
+    .style{
+        display: flex;
+        height: 100%;
+    }
+    .style > p{
+        display: none;
+    }
+    .btn{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+              
+        margin: 0px ;
+        padding: 0px;
+    }
+    .btn > button{
+        
+        display: flex;
+        align-items: center;
+  
+        justify-content: center;
+        font-size: 16px;
+        margin: 10px 0px ;
+
+        padding: 5px 10px;
+    }
+
+    .colors{
+        display: flex;
+
+    }
+    .colors > p{
+        display: none;
+    }
+    .btn__col{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+              
+        margin: 0px;
+        margin: 0px 10px ;
+    }
+    .btn__col > input{
+        margin: 10px 0px;
+
+    }
+    .colors > p{
+        text-align: center;
+    }
+    #createhex{
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 970px) and (min-width: 611px){
+    .page{
+        max-width: 570px;
+    }
+    body{
+        
+        height: 100%;
+        width: 100%;
+        
+    }
+    .wrap{
+        background-color: white;
+        border-right: 1px solid #000;
+        flex: none;
+        max-width: 961px;
+        height: 120px;
+        overflow: none;
+        box-shadow: 5px 0 5px -2px rgba(128, 128, 128, 0.3);
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    .page{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 1000px;
+        max-height: 1000px;
+        
+        
+    }
     .creater{
         display: flex;
         flex-direction: row;
         align-items:flex-start;
+        justify-content: space-between;
+    
     }
+    .creater > div{
+        padding: 0 10px;
+    }
+    
     
     #main{
         background-color: white;
@@ -183,15 +336,16 @@ input{
     }
     .btn{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     .btn > button{
-        border: 1px solid rgb(66, 66, 66);
-        border-radius: 30px;
+        border: 1px solid #000;
         background: none;
-        
-        margin: 5px 0;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin: 0 10px;
         padding: 2px 10px;
     }
     .colors{
@@ -211,12 +365,6 @@ input{
     }
     #createhex{
         padding: 2px 10px;
-    }
-
-}
-@media only screen and (max-width: 380px) {
-    .page{
-        max-width: 370px;
     }
 }
 
